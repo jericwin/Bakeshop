@@ -1,0 +1,188 @@
+:root{
+    --green: #088178;
+    --grey: #E3E6F3;
+    --heading_color: #222;
+    --paragraph_color: #465b52;}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+body{
+    width: 100%;
+    font-family: 'Spartan', sans-serif;}
+h1{
+    font-size: 50px;  
+    line-height: 64px;     
+    color: var(--heading_color);}
+h2{
+    font-size: 46px;    
+    line-height: 54px;  
+    color: var(--heading_color);}
+h4{
+    font-size: 20px;    
+    color: var(--heading_color);}
+h6{
+    font-size: 12px;     
+    font-weight: 700;}
+p{
+    font-size: 16px;         
+    color: var(--paragraph_color);
+    margin: 1rem 0 1.25rem 0;  }
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s ease;}
+
+.section-p1{
+    padding: 40px 80px;    }
+.section-m1{
+    margin: 40px 0;       }
+.header{
+    background-color: #E3E6F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;   
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.navbar li{
+    list-style: none;
+    padding: 0 18px;   
+    position: relative;}
+.navbar li a{
+    text-decoration: none;
+    font-size: 16px;         
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;}
+.navbar li a:hover,
+.navbar li a.active{
+    color: var(--green);}
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    width:30%;
+    height: 2px;     
+    background-color: var(--green);
+    position: absolute;
+    bottom: -20px;    
+    left: 40px;}
+
+.mobile{
+    display: none;}
+#close{
+    display: none;}
+
+.hero{
+    background-image: url("https://img.freepik.com/free-photo/various-buns-breakfast_23-2147758248.jpg?w=996&t=st=1712573675~exp=1712574275~hmac=a9dca5fc2e5c5803229e508d8d1e45a19e733d193605c72591730387ddd03718");
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 80px;      }
+.hero h4{
+    color: white;}
+.hero h2{
+    color: white;}
+.hero p{
+    color: white;}
+.product1{
+    text-align: center;}
+.product1__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0 ;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0; 
+    transition: 0.2s ease;
+    position: relative;}
+
+.product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);}
+.product1 .pro img{
+    max-width: 100%;
+    border-radius: 20px;}
+.product1 .pro .desc{
+    text-align: start;
+    padding: 10px 0;}
+.product1 .pro .desc span{
+    color: #606063;
+    font-size: 12px;}
+.product1 .pro .desc h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;}
+.product1 .pro .desc h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--green);}
+.product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: var(--green);
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;}
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;}
+.footer__text h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;}
+.footer__text p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: justify;}
+.icon {
+        color: white;}
